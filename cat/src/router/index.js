@@ -23,17 +23,17 @@ const routes = [
     ]
   },
   {
-    path: 'movie',
+    path: '/movie',
     name: 'movie',
     component: () => import(/* webpackChunkName: "movie" */ '../views/Movie.vue')
   },
   {
-    path: 'mine',
+    path: '/mine',
     name: 'mine',
     component: () => import(/* webpackChunkName: "mine" */ '../views/Mine.vue')
   },
   {
-    path: 'about',
+    path: '/about',
     name: 'about',
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   }
