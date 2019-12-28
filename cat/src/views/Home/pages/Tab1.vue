@@ -5,6 +5,8 @@
         <img :src="item.img" alt />
         <div class="right">
           <span>{{item.nm}}</span>
+         
+          <span>观众评:{{item.sc}}</span> 
           <span>观众评:{{item.sc}}</span>
           <span>主演:{{item.star}}</span>
           <span>{{item.showInfo}}</span>
