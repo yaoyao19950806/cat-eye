@@ -9,6 +9,10 @@
           <span>主演:{{item.star}}</span>
           <span>{{item.showInfo}}</span>
         </div>
+        <button
+          id="btn"
+          class= "{item.globalReleased ? '  btn':'active'"
+        >{{item.globalReleased?'购票':'预售'}}</button>
       </li>
     </ul>
   </div>
@@ -44,20 +48,35 @@ export default {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  li{
+  li {
     width: 98vw;
     height: 150px;
     display: flex;
     margin: 5px;
-    img{
-      flex: 2;
+    img {
+      width: 20%;
+      flex: 1;
     }
-    .right{
-      margin-left:5px; 
+    .right {
+      margin-left: 5px;
       flex: 6;
       display: flex;
       flex-direction: column;
       font-size: 14px;
+      span {
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+    #btn {
+      width: 40px;
+      height: 30px;
+      background: orangered;
+      margin:50px 20px 0 0 ; 
+     .active {
+        background: gray;
+      }
+     
     }
   }
 }
