@@ -11,7 +11,7 @@
         </div>
         <button
           id="btn"
-          class= "{item.globalReleased ? '  btn':'active'"
+          class= "{item.globalReleased ? 'active ':''"
         >{{item.globalReleased?'购票':'预售'}}</button>
       </li>
     </ul>
@@ -71,10 +71,10 @@ export default {
     #btn {
       width: 40px;
       height: 30px;
-      background: orangered;
+      // background: orangered;
       margin:50px 20px 0 0 ; 
      .active {
-        background: gray;
+        background: orangered;
       }
      
     }
