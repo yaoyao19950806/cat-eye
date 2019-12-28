@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <header class="header"></header>
+    <header class="header">
+      猫眼影院
+    </header>
     <main class="main">
       <router-view />
     </main>
@@ -38,7 +40,12 @@ export default {
 .header{
   width: 100vw;
   height: 45px;
-  background: #eaeaea;
+  background: orangered;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 45px;
 }
 .main{
   width: 100vw;
